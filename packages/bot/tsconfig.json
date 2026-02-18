@@ -1,0 +1,61 @@
+{
+  "extends": "@temchik/tsconfig/esm.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "../../dts/packages/bot",
+    "paths": {
+      "@temchik/bot-templates": ["../bot-templates/src/index.ts"],
+      "@temchik/bot-templates/*": ["../bot-templates/src/*"],
+      "@temchik/db": ["../db/src/index.ts"],
+      "@temchik/db/*": ["../db/src/*"],
+      "@temchik/event-bus": ["../event-bus/src/index.ts"],
+      "@temchik/event-bus/*": ["../event-bus/src/*"],
+      "@temchik/exchanges": ["../exchanges/src/index.ts"],
+      "@temchik/exchanges/*": ["../exchanges/src/*"],
+      "@temchik/logger": ["../logger/src/index.ts"],
+      "@temchik/logger/*": ["../logger/src/*"],
+      "@temchik/tools": ["../tools/src/index.ts"],
+      "@temchik/tools/*": ["../tools/src/*"],
+      "@temchik/tsconfig/*": ["../tsconfig/*"],
+      "@temchik/types": ["../types/src/index.ts"],
+      "@temchik/types/*": ["../types/src/*"],
+      "@temchik/bot-processor": ["../bot-processor/src/index.ts"],
+      "@temchik/bot-processor/*": ["../bot-processor/src/*"],
+      "@temchik/trpc": ["../trpc/src/index.ts"],
+      "@temchik/trpc/*": ["../trpc/src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "references": [
+    {
+      "path": "../bot-processor"
+    },
+    {
+      "path": "../bot-templates"
+    },
+    {
+      "path": "../db"
+    },
+    {
+      "path": "../event-bus"
+    },
+    {
+      "path": "../exchanges"
+    },
+    {
+      "path": "../logger"
+    },
+    {
+      "path": "../tools"
+    },
+    {
+      "path": "../trpc"
+    },
+    {
+      "path": "../tsconfig"
+    },
+    {
+      "path": "../types"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+# Treat the legacy TypeScript/JS monorepo as vendored so language stats
+# reflect the Go backend.
+app/** linguist-vendored
+packages/** linguist-vendored

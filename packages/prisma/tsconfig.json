@@ -1,0 +1,38 @@
+{
+  "extends": "@temchik/tsconfig/module.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "../../dts/packages/prisma",
+    "paths": {
+      "@temchik/tools": [
+        "../tools/src/index.ts"
+      ],
+      "@temchik/tools/*": [
+        "../tools/src/*"
+      ],
+      "@temchik/tsconfig/*": [
+        "../tsconfig/*"
+      ],
+      "@temchik/types": [
+        "../types/src/index.ts"
+      ],
+      "@temchik/types/*": [
+        "../types/src/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "references": [
+    {
+      "path": "../tools"
+    },
+    {
+      "path": "../tsconfig"
+    },
+    {
+      "path": "../types"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "extends": "@temchik/tsconfig/esm.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "../../dts/packages/bot-templates",
+    "paths": {
+      "@temchik/bot-processor": ["../bot-processor/src/index.ts"],
+      "@temchik/bot-processor/*": ["../bot-processor/src/*"],
+      "@temchik/exchanges": ["../exchanges/src/index.ts"],
+      "@temchik/exchanges/*": ["../exchanges/src/*"],
+      "@temchik/logger": ["../logger/src/index.ts"],
+      "@temchik/logger/*": ["../logger/src/*"],
+      "@temchik/tools": ["../tools/src/index.ts"],
+      "@temchik/tools/*": ["../tools/src/*"],
+      "@temchik/tsconfig/*": ["../tsconfig/*"],
+      "@temchik/types": ["../types/src/index.ts"],
+      "@temchik/types/*": ["../types/src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "references": [
+    { "path": "../bot-processor" },
+    { "path": "../exchanges" },
+    { "path": "../logger" },
+    { "path": "../tools" },
+    { "path": "../tsconfig" },
+    { "path": "../types" }
+  ]
+}

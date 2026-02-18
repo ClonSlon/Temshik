@@ -1,0 +1,26 @@
+{
+  "extends": "@temchik/tsconfig/esm.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "../../dts/packages/event-bus",
+    "paths": {
+      "@temchik/db": ["../db/src/index.ts"],
+      "@temchik/db/*": ["../db/src/*"],
+      "@temchik/tsconfig/*": ["../tsconfig/*"],
+      "@temchik/types": ["../types/src/index.ts"],
+      "@temchik/types/*": ["../types/src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "references": [
+    {
+      "path": "../db"
+    },
+    {
+      "path": "../tsconfig"
+    },
+    {
+      "path": "../types"
+    }
+  ]
+}

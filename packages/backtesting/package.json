@@ -1,0 +1,26 @@
+{
+  "name": "@temchik/backtesting",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "author": "bludnic",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@temchik/tsconfig": "workspace:*",
+    "@temchik/types": "workspace:*",
+    "@types/lodash": "^4.17.13",
+    "@types/node": "^22.10.2",
+    "typescript": "5.8.3"
+  },
+  "dependencies": {
+    "@temchik/bot-processor": "workspace:*",
+    "@temchik/exchanges": "workspace:*",
+    "@temchik/logger": "workspace:*",
+    "@temchik/tools": "workspace:*",
+    "lodash": "^4.17.21",
+    "table": "^6.9.0"
+  }
+}

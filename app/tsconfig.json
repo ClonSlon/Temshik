@@ -1,0 +1,68 @@
+{
+  "extends": "@temchik/tsconfig/esm.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "../dts/app",
+    "paths": {
+      "@temchik/backtesting": ["../packages/backtesting/src/index.ts"],
+      "@temchik/backtesting/*": ["../packages/backtesting/src/*"],
+      "@temchik/bot": ["../packages/bot/src/index.ts"],
+      "@temchik/bot/*": ["../packages/bot/src/*"],
+      "@temchik/bot-processor": ["../packages/bot-processor/src/index.ts"],
+      "@temchik/bot-processor/*": ["../packages/bot-processor/src/*"],
+      "@temchik/bot-templates": ["../packages/bot-templates/src/index.ts"],
+      "@temchik/bot-templates/*": ["../packages/bot-templates/src/*"],
+      "@temchik/db": ["../packages/db/src/index.ts"],
+      "@temchik/db/*": ["../packages/db/src/*"],
+      "@temchik/exchanges": ["../packages/exchanges/src/index.ts"],
+      "@temchik/exchanges/*": ["../packages/exchanges/src/*"],
+      "@temchik/logger": ["../packages/logger/src/index.ts"],
+      "@temchik/logger/*": ["../packages/logger/src/*"],
+      "@temchik/tools": ["../packages/tools/src/index.ts"],
+      "@temchik/tools/*": ["../packages/tools/src/*"],
+      "@temchik/trpc": ["../packages/trpc/src/index.ts"],
+      "@temchik/trpc/*": ["../packages/trpc/src/*"],
+      "@temchik/tsconfig/*": ["../packages/tsconfig/*"],
+      "@temchik/types": ["../packages/types/src/index.ts"],
+      "@temchik/types/*": ["../packages/types/src/*"]
+    },
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*"],
+  "files": ["package.json"],
+  "references": [
+    {
+      "path": "../packages/backtesting"
+    },
+    {
+      "path": "../packages/bot"
+    },
+    {
+      "path": "../packages/bot-processor"
+    },
+    {
+      "path": "../packages/bot-templates"
+    },
+    {
+      "path": "../packages/db"
+    },
+    {
+      "path": "../packages/exchanges"
+    },
+    {
+      "path": "../packages/logger"
+    },
+    {
+      "path": "../packages/tools"
+    },
+    {
+      "path": "../packages/trpc"
+    },
+    {
+      "path": "../packages/tsconfig"
+    },
+    {
+      "path": "../packages/types"
+    }
+  ]
+}

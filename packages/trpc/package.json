@@ -1,0 +1,32 @@
+{
+  "name": "@temchik/trpc",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "author": "bludnic",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@temchik/tsconfig": "workspace:*",
+    "@temchik/types": "workspace:*",
+    "@types/node": "^22.10.2",
+    "typescript": "5.8.3"
+  },
+  "dependencies": {
+    "@temchik/backtesting": "workspace:*",
+    "@temchik/bot-processor": "workspace:*",
+    "@temchik/bot-templates": "workspace:*",
+    "@temchik/db": "workspace:*",
+    "@temchik/event-bus": "workspace:*",
+    "@temchik/exchanges": "workspace:*",
+    "@temchik/prisma": "workspace:*",
+    "@temchik/tools": "workspace:*",
+    "@trpc/server": "^11.4.1",
+    "ccxt": "4.4.91",
+    "superjson": "^2.2.2",
+    "zod": "3.25.65",
+    "zod-to-json-schema": "^3.24.5"
+  }
+}

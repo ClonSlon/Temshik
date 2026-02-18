@@ -1,0 +1,21 @@
+{
+  "extends": "@temchik/tsconfig/esm.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "../../dts/packages/indicators",
+    "paths": {
+      "@temchik/tsconfig/*": ["../tsconfig/*"],
+      "@temchik/types": ["../types/src/index.ts"],
+      "@temchik/types/*": ["../types/src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "references": [
+    {
+      "path": "../tsconfig"
+    },
+    {
+      "path": "../types"
+    }
+  ]
+}

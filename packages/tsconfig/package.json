@@ -1,0 +1,19 @@
+{
+  "name": "@temchik/tsconfig",
+  "version": "0.0.0",
+  "description": "TypeScript configuration from Temchik",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Open-Trader/temchik.git"
+  },
+  "keywords": [
+    "tsconfig",
+    "temchik"
+  ],
+  "author": "bludnic",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Open-Trader/temchik/issues"
+  },
+  "homepage": "https://github.com/Open-Trader/temchik/tree/master/packages/tsconfig"
+}
